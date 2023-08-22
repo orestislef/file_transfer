@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.file-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.folder {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.folder.collapsed::before {
+    content: "\25B6"; /* Right-pointing triangle (collapsed) */
+}
+
+.folder::before {
+    content: "\25BC"; /* Down-pointing triangle (expanded) */
+}
+
+.file {
+    margin-right: 10px;
+    color: #333;
+}
+
+
+.upload-form {
+    text-align: center;
+}
+
+.file-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.file-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.folder {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.folder.collapsed::before {
+    content: "\25B6"; /* Right-pointing triangle (collapsed) */
+}
+
+.folder::before {
+    content: "\25BC"; /* Down-pointing triangle (expanded) */
+}
+
+.file {
+    margin-right: 10px;
+    color: #333;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+#fileTree {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#fileTree ul {
+    list-style-type: none;
+}
+
+#fileTree .folder:before {
+    content: "\25b6";
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#fileTree .folder.collapsed:before {
+    content: "\25bc";
+}
+
+#fileTree .folder.collapsed + ul {
+    display: none;
+}

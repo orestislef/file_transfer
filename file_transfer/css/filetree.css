@@ -1,0 +1,35 @@
+/* Add styles for the file tree view */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.folder {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.folder.collapsed::before {
+    content: "\25B6"; /* Right-pointing triangle (collapsed) */
+}
+
+.folder::before {
+    content: "\25BC"; /* Down-pointing triangle (expanded) */
+}
+
+.file {
+    margin-right: 10px;
+    color: #333;
+}

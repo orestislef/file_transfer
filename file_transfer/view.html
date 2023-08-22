@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Viewer</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/filetree.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Viewer</h1>
+        
+        <div class="file-list">
+            <h2>Files in Folder</h2>
+            <button id="selectAllButton" class="select-button">Select All</button>
+            <button id="downloadSelectedButton" class="download-button" disabled>Download Selected</button>
+            <ul id="fileTree">
+                <!-- The file tree will be generated using JavaScript -->
+            </ul>
+        </div>
+    </div>
+    
+    <script src="js/filetree.js"></script>
+</body>
+</html>
